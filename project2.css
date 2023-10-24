@@ -1,0 +1,130 @@
+body {
+    background-color: antiquewhite;
+    color: white;
+}
+
+.header-container {
+    min-height: 100px;
+    background-color: rgb(60,60,60);
+    position: fixed;
+    width: 100%;
+
+}
+header {
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+span {
+    font-weight: bold;
+}
+
+.mybutton {
+    font-size: 1.15rem;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-right: 6px; 
+    border: 1px solid white;
+}
+.container {
+    min-height: 500px;
+    padding-top: 150px;
+    box-sizing: border-box;
+    margin: 0px auto;
+    max-width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box {
+    background-color: rgb(97, 218, 97);
+    margin-bottom: 20px;
+    width: 30%;
+}
+.box img {
+    width: 100%;
+    height: auto;
+}
+.box p {
+    line-height: 1.25rem;
+    font-size: 17px;
+    padding: 20px 30px;
+}   
+.box p::first-line {
+    font-weight: 700;
+}
+
+.lastbox {
+    display: none;
+}
+.mob-test {
+    display: none;
+}
+@media (max-width: 768px) {
+    .box {
+        width: 45%;
+    }
+    .lastbox {
+        display: block;
+    }
+
+    .logo {
+        padding-left: 30px;
+        min-height: 50px;
+        padding-top: 30px;
+    }
+    .navbutton a {
+        display: none   ;
+        margin-right: 0;
+    }
+    .header-container {
+        position: relative;
+    }
+    .container {
+        padding-top: 20px;
+    }
+    .mob-test {
+        margin-right: 30px;
+        display: block;
+    }
+    .mob-button {
+        display: none;
+        position: absolute;
+    }
+    .mbbutton {
+        background-color: rgba(255, 255, 255, 0.611);
+        color: black;
+        text-decoration: none;
+        font-size: 1.15rem;
+        display: block;
+        position: relative;
+        padding: 20px 30px;
+        margin-left: -60px;
+        text-align: center;
+    }
+
+}
+@media (max-width: 400px) {
+    .box {
+        width: 100%;
+    }
+    .changebox {
+        display: none;
+    }
+    .mob-test {
+        display: none;
+    }
+    header {
+        display: block;
+    }
+    .navbutton a {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
